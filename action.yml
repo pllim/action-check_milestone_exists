@@ -1,0 +1,7 @@
+name: 'Check milestone'
+description: 'Check if milestone is set.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+        - 'none'
