@@ -6,7 +6,7 @@ from github import Github
 
 event_jsonfile = os.environ['GITHUB_EVENT_PATH']
 
-with open(event_jsonfile) as fin:
+with open(event_jsonfile, encoding='utf-8') as fin:
     event = json.load(fin)
 
 pr_num = event['number']
