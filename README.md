@@ -1,4 +1,4 @@
-# action-check_milestone_exists
+# GitHub Action to check if PR milestone is set
 
 **Blocked by:** https://github.community/t/feature-request-add-milestone-changes-as-activity-type-to-pull-request/16778/7
 
