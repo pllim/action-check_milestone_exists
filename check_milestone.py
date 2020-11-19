@@ -11,7 +11,7 @@ with open(event_jsonfile, encoding='utf-8') as fin:
 
 event = event['event']
 pr_num = event['number']
-reponame = os.environ['GITHUB_REPOSITORY']
+reponame = event['pull_request']['base']['repo']['full_name']
 g = Github(os.environ.get('GITHUB_TOKEN'))
 repo = g.get_repo(reponame)
 try:
