@@ -9,6 +9,7 @@ event_jsonfile = os.environ['GITHUB_EVENT_PATH']
 with open(event_jsonfile, encoding='utf-8') as fin:
     event = json.load(fin)
 
+event = event['event']
 pr_num = event['number']
 reponame = os.environ['GITHUB_REPOSITORY']
 g = Github(os.environ.get('GITHUB_TOKEN'))
