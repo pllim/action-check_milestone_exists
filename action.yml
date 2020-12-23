@@ -1,7 +1,6 @@
 name: 'Check milestone'
-description: 'Check if milestone is set.'
+description: 'Check if PR has milestone set.'
+author: 'pllim'
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args:
-  - 'none'
+  using: 'node12'
+  main: 'dist/index.js'
