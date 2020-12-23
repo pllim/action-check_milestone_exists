@@ -1,6 +1,8 @@
 # GitHub Action to check if PR milestone is set
 
 **Blocked by:** https://github.community/t/feature-request-add-milestone-changes-as-activity-type-to-pull-request/16778/7
+(Until this is fixed, this Action would not run when PR has milestone set
+or removed.)
 
 Check if milestone is assigned. Create a `.github/workflows/check_pr_milestone.yml` with this:
 
@@ -18,6 +20,4 @@ jobs:
     steps:
     - name: Check milestone
       uses: pllim/action-check_milestone_exists@main
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
