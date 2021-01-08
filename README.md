@@ -10,7 +10,7 @@ Check if milestone is assigned. Create a `.github/workflows/check_pr_milestone.y
 name: Check PR milestone
 
 on:
-  pull_request_target:
+  pull_request:
     types: [opened, milestoned, demilestoned]
 
 jobs:
