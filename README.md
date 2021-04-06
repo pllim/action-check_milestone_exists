@@ -1,4 +1,4 @@
-# Archive: Use github-script
+# Archived: Use github-script
 
 When GitHub Actions support proper PR milestone events, use this instead:
 
